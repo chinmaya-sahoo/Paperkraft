@@ -19,7 +19,7 @@ const InfiniteScroll = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-32 bg-gradient-to-b from-white to-gray-200">
+    <div className="relative w-full max-w-4xl mx-auto overflow-hidden h-32 bg-gradient-to-b from-white to-gray-200 rounded-lg shadow-lg">
       <div
         ref={scrollContainer}
         className="flex gap-4 animate-scroll"

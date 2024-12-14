@@ -6,9 +6,11 @@ function Home() {
     <div>
       <div className="home w-[80vw] h-[100vh] rounded-md flex flex-col justify-center items-center bg-black ">{/*overflow-auto*/}
         <ul>
-          <li className="h-[85%] flex justify-center items-center bg-gray-100">
-            <InfiniteScroll />
-          </li>
+          <div className=" flex justify-center items-center bg-gray-100">
+            <div className="container flex justify-center items-center">
+              <InfiniteScroll />
+            </div>
+          </div>
           <li className='catagory '>
 
           </li>
