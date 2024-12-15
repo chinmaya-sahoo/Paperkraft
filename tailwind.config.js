@@ -3,15 +3,20 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        scroll: "scroll 8s linear infinite",
+        scroll: "scroll 30s linear infinite",
       },
       keyframes: {
         scroll: {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-50%)" },
+          // from: { transform: "translateX(0)" },
+          to: {
+            left: "-200px",
+
+            },
         },
       },
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 };
