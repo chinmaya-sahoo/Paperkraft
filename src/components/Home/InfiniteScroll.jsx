@@ -3,9 +3,51 @@ import React, { useEffect, useRef } from "react";
 import Marquee from "react-fast-marquee";
 
 const InfiniteScroll = () => {
-  const item = ["1", "2", "3", "4", "5", "6", "7", "8"];
+  const item = [
+    { 
+      id: "1",
+      path: "Marquee_images/one.png"
+    },
+    { 
+      id: "2",
+      path: "Marquee_images/two.png"
+    },
+    { 
+      id: "3",
+      path: "Marquee_images/three.png"
+    },
+    { 
+      id: "4",
+      path: "Marquee_images/four.png"
+    },
+    { 
+      id: "5",
+      path: "Marquee_images/five.png"
+    },
+    { 
+      id: "6",
+      path: "Marquee_images/six.png"
+    },
+    { 
+      id: "7",
+      path: "Marquee_images/seven.png"
+    },
+    { 
+      id: "8",
+      path: "Marquee_images/eight.png"
+    },
+    { 
+      id: "9",
+      path: "Marquee_images/nine.png"
+    },
+    { 
+      id: "10",
+      path: "Marquee_images/ten.png"
+    }
+  ];
+  
   return (
-    <div className="mt-12 text-center">
+    <div className="mt-12 text-center w-[80vw] bg-gray-800 text-white rounded-sm ">
       <div className="mb-12">
         <h1>Our Technology Partner</h1>
       </div>
@@ -31,41 +73,19 @@ const InfiniteScroll = () => {
             speed	number	50	Speed calculated as pixels/second
 
             delay	number	0	Duration to delay the animation after render, in seconds
-            
+
             loop	number	0	The number of times the marquee should loop, 0 is equivalent to infinite
             gradient	boolean	false	Whether to show the gradient or not
 
           */}
-          <div className="mx-7 my-0">
-            <img className="w-4/5" src={img1} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img2} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img3} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img4} alt="" />
-          </div>
-          <div>
-            <img src={img5} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img6} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img7} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img8} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img9} alt="" />
-          </div>
-          <div className="mx-7 my-0">
-            <img src={img10} alt="" />
-          </div>
+        {
+          item.map((img, index) => (
+            <div key={index} className="mx-7 my-0">
+              <img className="w-4/5" src={img.path} alt="" />
+            </div>
+          ))
+        }
+          
         </Marquee>
       </div>
     </div>
