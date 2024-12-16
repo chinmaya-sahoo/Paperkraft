@@ -1,35 +1,49 @@
 import React, { useEffect, useRef } from "react";
-import "./HomeUtility.css";
+// import "./HomeUtility.css";
+import Marquee from "react-fast-marquee";
 
 const InfiniteScroll = () => {
   const item = ["1", "2", "3", "4", "5", "6", "7", "8"];
   return (
-    <div className="wrapper h-[100px] mt-20 ms-auto me-auto relative overflow-hidden mask">
-      <div className="item item-1 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[25.25s] ">
-
-      </div>
-      <div className="item item-2 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[21.5s]">
-
-      </div>
-      <div className="item item-3 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[17.75s]">
-
-      </div>
-      <div className="item item-4 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[14s]">
-
-      </div>
-      <div className="item item-5 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[10.25s]">
-
-      </div>
-      <div className="item item-6 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[6.5s]">
-
-      </div>
-      <div className="item item-7 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[2.75s]">
-
-      </div>
-      <div className="item item-8 w-[190px] h-[100px] bg-red-700 rounded-[6px] absolute left-[100%] animate-scroll animation-delay-[-1s]">
-
+    <div className="App">
+      <div className="title">
+        <h1>Our Technology Partner</h1>
       </div>
 
+      <div>
+        <Marquee direction="right" speed={100} delay={5}>
+          <div className="image_wrapper">
+            <img src={img1} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img2} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img3} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img4} alt="" />
+          </div>
+          <div>
+            <img src={img5} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img6} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img7} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img8} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img9} alt="" />
+          </div>
+          <div className="image_wrapper">
+            <img src={img10} alt="" />
+          </div>
+        </Marquee>
+      </div>
     </div>
   );
 };

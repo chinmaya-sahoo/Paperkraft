@@ -7,7 +7,7 @@ function Home() {
       <div className="home w-[80vw] h-[100vh] rounded-md flex flex-col justify-center items-center bg-black ">{/*overflow-auto*/}
         <ul>
           <div className="">
-              <InfiniteScroll />
+              <InfiniteScroll className="" >Home</InfiniteScroll>
           </div>
           <li className='catagory '>
 
