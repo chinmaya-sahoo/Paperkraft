@@ -26,7 +26,7 @@ const Sidebar = () => {
       }`}
     >
       {/* Logo & Toggle */}
-      <div className="flex items-center justify-between p-4">
+      <div className={`flex items-center p-4 ${isCollapsed ? "justify-center" : "justify-between" } `} >
         {!isCollapsed && <h2 className="text-lg font-bold">CodingLab</h2>}
         <button
           onClick={toggleSidebar}
@@ -83,7 +83,7 @@ const Sidebar = () => {
       </nav>
 
       {/* Profile Section */}
-      <div className="absolute bottom-4 flex items-center p-4 w-full">
+      <div className={`absolute bottom-4 flex items-center p-5 w-full`}>
         <img
           src="https://via.placeholder.com/40"
           alt="Profile"
@@ -102,11 +102,12 @@ const Sidebar = () => {
 
 // Navigation Item Component
 const NavItem = ({ icon, label, collapsed }) => {
+  
   return (
     <li>
       <a
         href="#"
-        className="flex items-center p-3 hover:bg-gray-700 rounded-md transition"
+        className={`flex items-center p-3 hover:bg-gray-700 rounded-md transition ${ collapsed ? "justify-center" : "" } `}
       >
         {icon}
         {!collapsed && <span className="ml-4">{label}</span>}
