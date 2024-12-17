@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-// import "./HomeUtility.css";
+import React from "react";
 import Marquee from "react-fast-marquee";
 
 const InfiniteScroll = () => {

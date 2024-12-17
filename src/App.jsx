@@ -8,9 +8,9 @@ function App() {
 
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <Home /> */}
-      <InfiniteScroll />
+      {/* <InfiniteScroll /> */}
     </div>
   )
 }
