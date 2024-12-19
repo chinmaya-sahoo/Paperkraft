@@ -1,0 +1,27 @@
+.blink{
+    animation-name: blink;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    /* animation-delay: 3s; */
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 0.5;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}

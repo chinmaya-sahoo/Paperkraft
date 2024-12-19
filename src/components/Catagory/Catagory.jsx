@@ -2,18 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import "./CatagoryAnimation.css";
 const Category = () => {
-  // Slider settings for the top random image slider
-  const topSliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+
 
   // Slider settings for the 3D image slider
   const bottomSliderSettings = {
@@ -41,32 +32,32 @@ const Category = () => {
       </div>
 
       {/* Top Slider */}
-      {/* Instead of slider will create a random image renderer(3 images per 2000ms) */}
       <div className="mb-6">
         <h2 className="text-lg font-semibold mb-2">Random Images</h2>
-        <Slider {...topSliderSettings}>
+
+        <div className="flex justify-center gap-10" >
           <div>
             <img
               src="https://via.placeholder.com/300"
               alt="Random 1"
-              className="w-full h-40 object-cover rounded-md"
+              className=" h-70 object-cover rounded-md blink"/* animate-blink */
             />
           </div>
           <div>
             <img
               src="https://via.placeholder.com/300"
-              alt="Random 2"
-              className="w-full h-40 object-cover rounded-md"
+              alt="Random 1"
+              className=" h-70 object-cover rounded-md blink"/* animate-blink */
             />
           </div>
           <div>
             <img
               src="https://via.placeholder.com/300"
-              alt="Random 3"
-              className="w-full h-40 object-cover rounded-md"
+              alt="Random 1"
+              className=" h-70 object-cover rounded-md blink"/* animate-blink */
             />
           </div>
-        </Slider>
+        </div>
       </div>
 
       {/* Bottom Slider */}
