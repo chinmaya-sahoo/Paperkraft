@@ -31,13 +31,13 @@ const Category = () => {
   return (
     <div className="p-4">
       {/* Header Section */}
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl font-bold">Category</h1>
-        <input
-          type="text"
-          placeholder="Search"
-          className="border p-2 rounded-md shadow-sm focus:outline-none"
-        />
+      <div className="flex flex-col justify-between items-center mb-4">
+        <h1 className="text-xl mb-4 font-bold">Category</h1>
+        <select className="border p-2 rounded-md shadow-sm focus:outline-none">
+          <option value="option1">Option 1 </option>
+          <option value="option2">Option 2 </option>
+          <option value="option3">Option 3 </option>
+        </select>
       </div>
 
       {/* Top Slider */}
