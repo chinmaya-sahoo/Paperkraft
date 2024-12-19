@@ -41,6 +41,7 @@ const Category = () => {
       </div>
 
       {/* Top Slider */}
+      {/* Instead of slider will create a random image renderer(3 images per 2000ms) */}
       <div className="mb-6">
         <h2 className="text-lg font-semibold mb-2">Random Images</h2>
         <Slider {...topSliderSettings}>
@@ -69,6 +70,7 @@ const Category = () => {
       </div>
 
       {/* Bottom Slider */}
+      {/* create a better 3D slider */}
       <div>
         <h2 className="text-lg font-semibold mb-2">3D Image Slider</h2>
         <Slider {...bottomSliderSettings}>
