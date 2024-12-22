@@ -11,12 +11,28 @@ const Category = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "50px",
+    centerMode: false,
     autoplay: true,
+    arrows : false,
     autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust for tablets
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // Adjust for mobile
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -62,32 +78,32 @@ const Category = () => {
 
       {/* Bottom Slider */}
       {/* create a better 3D slider */}
-      <div>
-        <h2 className="text-lg font-semibold mb-2">3D Image Slider</h2>
-        <Slider {...bottomSliderSettings}>
-          <div>
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Category 1"
-              className="w-full h-40 object-cover rounded-md"
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Category 2"
-              className="w-full h-40 object-cover rounded-md"
-            />
-          </div>
-          <div>
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Category 3"
-              className="w-full h-40 object-cover rounded-md"
-            />
-          </div>
-        </Slider>
-      </div>
+      <div className="carousel-container">
+      <h2 className="text-lg font-semibold mb-4">3D Image Slider</h2>
+      <Slider {...bottomSliderSettings} className="flex gap-4">
+        <div>
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Category 1"
+            className="w-full h-40 object-cover rounded-md"
+          />
+        </div>
+        <div>
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Category 2"
+            className="w-full h-40 object-cover rounded-md"
+          />
+        </div>
+        <div>
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Category 3"
+            className="w-full h-40 object-cover rounded-md"
+          />
+        </div>
+      </Slider>
+    </div>
     </div>
   );
 };
