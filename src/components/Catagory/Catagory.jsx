@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./CatagoryAnimation.css";
+import Slider3D from "./Slider3D/Slider3D";
 const Category = () => {
 
 
@@ -15,7 +16,7 @@ const Category = () => {
     slidesToScroll: 1,
     centerMode: false,
     autoplay: true,
-    arrows : false,
+    arrows: false,
     autoplaySpeed: 4000,
     responsive: [
       {
@@ -77,33 +78,37 @@ const Category = () => {
       </div>
 
       {/* Bottom Slider */}
-      {/* create a better 3D slider */}
       <div className="carousel-container">
-      <h2 className="text-lg font-semibold mb-4">3D Image Slider</h2>
-      <Slider {...bottomSliderSettings} className="flex gap-4">
-        <div>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Category 1"
-            className="w-full h-40 object-cover rounded-md"
-          />
-        </div>
-        <div>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Category 2"
-            className="w-full h-40 object-cover rounded-md"
-          />
-        </div>
-        <div>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Category 3"
-            className="w-full h-40 object-cover rounded-md"
-          />
-        </div>
-      </Slider>
-    </div>
+        <h2 className="text-lg font-semibold mb-4">3D Image Slider</h2>
+        <Slider {...bottomSliderSettings} className="flex gap-4">
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Category 1"
+              className="w-full h-40 object-cover rounded-md"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Category 2"
+              className="w-full h-40 object-cover rounded-md"
+            />
+          </div>
+          <div>
+            <img
+              src="https://via.placeholder.com/300"
+              alt="Category 3"
+              className="w-full h-40 object-cover rounded-md"
+            />
+          </div>
+        </Slider>
+      </div>
+
+      {/* costume 3D slider */}
+      <div className="">
+        <Slider3D />
+      </div>
     </div>
   );
 };
