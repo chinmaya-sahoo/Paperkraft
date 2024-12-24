@@ -1,4 +1,5 @@
 import React from "react";
+import InfiniteScroll from "../Home/InfiniteScroll";
 
 const About = () => {
   return (
@@ -6,7 +7,8 @@ const About = () => {
       <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6">
         {/* Title Section */}
         <h1 className="text-2xl font-bold text-center mb-4">About Us</h1>
-
+        {/* Scroll Section */}
+        <InfiniteScroll  />
         {/* Description Section */}
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Description</h2>
@@ -29,12 +31,12 @@ const About = () => {
         </div>
 
         {/* Infinite Slider Placeholder */}
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <h2 className="text-xl font-semibold mb-2">Infinite Slider</h2>
           <div className="h-32 bg-gray-200 rounded-lg flex items-center justify-center">
             <p className="text-gray-500">[Slider Placeholder]</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
