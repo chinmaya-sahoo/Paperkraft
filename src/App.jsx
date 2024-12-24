@@ -5,13 +5,15 @@ import InfiniteScroll from './components/Home/InfiniteScroll'
 import Sidebar from './components/Sidebar/Sidebar'
 import Category from './components/Catagory/Catagory'
 import About from './components/About/About'
+import Contact from './components/Contact/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <About/>
+      <Contact />
+      {/* <About/> */}
       {/* <Category />*/}
       {/* <Sidebar /> */}
       {/* <Home /> */}

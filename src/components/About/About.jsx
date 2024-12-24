@@ -14,7 +14,7 @@ const About = () => {
           <h2 className="text-xl font-semibold mb-2">Description</h2>
           <p className="text-gray-700">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec
-            massa at urna tincidunt tristique. Donec vitae quam neque.
+            massa at urna tincidunt tristique. Donec vitae quam neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur officia quia reprehenderit consectetur earum suscipit odit a ratione labore autem natus saepe laborum neque, repellat dolor! Itaque suscipit at necessitatibus porro sunt quasi distinctio est doloribus numquam inventore debitis rem incidunt doloremque quisquam deleniti sit harum commodi reprehenderit, amet eaque? Qui dicta, id sapiente obcaecati aut quia totam quisquam similique aspernatur consequuntur in impedit expedita repellendus autem libero fugiat sed necessitatibus repellat ipsam. Esse non beatae reiciendis dicta sunt consequatur eos ut aut minus explicabo, tempora quam laboriosam tenetur, delectus recusandae. Ullam excepturi praesentium id incidunt vel! Quasi, corrupti!
           </p>
         </div>
 
