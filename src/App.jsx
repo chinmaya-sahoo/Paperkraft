@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div>
-      <Contact />
-      {/* <About/> */}
+      {/* <Contact /> */}
+      <About/>
       {/* <Category />*/}
       {/* <Sidebar /> */}
       {/* <Home /> */}
