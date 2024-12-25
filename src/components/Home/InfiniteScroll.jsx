@@ -46,7 +46,7 @@ const InfiniteScroll = () => {
   ];
   
   return (
-    <div className="mt-12 text-center w-[80vw] bg-gray-800 text-white rounded-sm ">
+    <div className="mt-12 text-center w-[80%] bg-gray-800 text-white rounded-sm ">
       <div className="mb-12">
         <h1>Our Technology Partner</h1>
       </div>
