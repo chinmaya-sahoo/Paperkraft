@@ -27,8 +27,7 @@ const InfiniteScroll = () => {
           direction="right"
           speed={30}
           pauseOnHover={true}
-          gradient={true}
-          gradientWidth={30}
+          
         >
           {items.map((img) => (
             <div key={img.id} className="mx-3 flex-shrink-0">

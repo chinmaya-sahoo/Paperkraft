@@ -22,7 +22,7 @@ function App() {
       {/* <InfiniteScroll /> */}
       <div className="flex w-[100vw]  gap-2 bg-slate-500 ">
         <Sidebar/>
-        <Home/>
+        <Home className="w-[100vw-230px]" />
       </div>
     </div>
   )
