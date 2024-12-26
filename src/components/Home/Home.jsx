@@ -4,10 +4,10 @@ import InfiniteScroll from './InfiniteScroll'
 function Home() {
   return (
     <div>
-      <div className="home w-[80vw] h-[100vh] rounded-md flex flex-col justify-center items-center bg-black ">{/*overflow-auto*/}
+      <div className="home w-[80vw] h-[100vh] rounded-md flex flex-col justify-center items-center bg-gray-700 ">{/*overflow-auto*/}
         <ul>
           <div className="">
-              <InfiniteScroll className="" />
+              <InfiniteScroll  />
           </div>
           <li className='catagory '>
 

@@ -91,7 +91,7 @@ const Sidebar = () => {
         />
         {!isCollapsed && (
           <div className="ml-3">
-            <p className="text-sm font-semibold">Prem Shahi</p>
+            <p className="text-sm font-semibold">Chinmaya Sahoo</p>
             <p className="text-xs text-gray-400">Web Designer</p>
           </div>
         )}
