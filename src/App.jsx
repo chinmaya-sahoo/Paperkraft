@@ -6,14 +6,16 @@ import Sidebar from './components/Sidebar/Sidebar'
 import Category from './components/Catagory/Catagory'
 import About from './components/About/About'
 import Contact from './components/Contact/Contact'
+import Search from './components/Search/Search'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
+      <Search />
       {/* <Contact /> */}
-      <About/>
+      {/* <About/> */}
       {/* <Category />*/}
       {/* <Sidebar /> */}
       {/* <Home /> */}
