@@ -16,7 +16,7 @@ const InfiniteScroll = () => {
   ];
 
   return (
-    <div className="mt-[-24px] mb-6 w-[calc(100%+48%)] bg-transparent text-white rounded-sm p-4">
+    <div className="mt-[-24px] mb-6 w-[calc(100%+48%)] bg-gray-900 text-white rounded-sm p-4">
       <div className="overflow-hidden">
         <Marquee
           direction="right"
