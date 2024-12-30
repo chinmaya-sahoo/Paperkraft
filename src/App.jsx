@@ -24,7 +24,8 @@ function App() {
         <Sidebar/>
         {/* <Home className="w-[100vw-252px]" /> */}
         <div className=" bg-blue-500 w-[calc(100vw-260px)] h-screen rounded-sm">
-            <Home />
+            {/* <Home /> */}
+            <Category />
         </div>
       </div>
     </div>

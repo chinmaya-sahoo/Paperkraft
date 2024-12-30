@@ -40,7 +40,7 @@ const Category = () => {
     <div className="p-4">
       {/* Header Section */}
       <div className="flex flex-col justify-between items-center mb-4">
-        <h1 className="text-xl mb-4 font-bold">Category</h1>
+        <h1 className="text-xl mb-4 font-bold">Catagory</h1>
         <select className="border p-2 rounded-md shadow-sm focus:outline-none">
           <option value="option1">Option 1 </option>
           <option value="option2">Option 2 </option>
