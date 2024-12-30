@@ -4,7 +4,7 @@ import InfiniteScroll from './InfiniteScroll'
 function Home() {
   return (
     <div>
-      <div className="home w-[calc(100vw-260px)] h-[100vh] rounded-sm flex flex-col justify-center items-center bg-gray-700 ">{/*overflow-auto*/}
+      <div className="home w-full h-[100vh] rounded-sm flex flex-col justify-center items-center bg-gray-700 ">{/*overflow-auto*/}
         <ul >
           <div className="">
               <InfiniteScroll  />
