@@ -20,9 +20,12 @@ function App() {
       {/* <Sidebar /> */}
       {/* <Home /> */}
       {/* <InfiniteScroll /> */}
-      <div className="flex w-[100vw]  gap-1 bg-slate-500 ">
+      <div className="flex w-[100vw] gap-1 bg-slate-500 ">
         <Sidebar/>
-        <Home className="w-[100vw-230px]" />
+        {/* <Home className="w-[100vw-252px]" /> */}
+        <div className=" bg-blue-500 w-[calc(100vw-260px)] h-screen rounded-sm overflow-y-auto overflow-x-hidden p-6">
+            
+        </div>
       </div>
     </div>
   )

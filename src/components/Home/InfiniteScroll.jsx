@@ -16,7 +16,7 @@ const InfiniteScroll = () => {
   ];
 
   return (
-    <div className="mt-6 w-full bg-gray-800 text-white rounded-sm p-4">
+    <div className="mt-6 w-[100vw-256px] bg-gray-800 text-white rounded-sm p-4">
       <div className="mb-6 text-center">
         <h1 className="text-lg sm:text-xl md:text-2xl font-semibold">
           Our Technology Partners
