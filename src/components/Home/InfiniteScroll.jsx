@@ -16,23 +16,18 @@ const InfiniteScroll = () => {
   ];
 
   return (
-    <div className="mt-6 w-[100vw-256px] bg-gray-800 text-white rounded-sm p-4">
-      <div className="mb-6 text-center">
-        <h1 className="text-lg sm:text-xl md:text-2xl font-semibold">
-          Our Technology Partners
-        </h1>
-      </div>
+    <div className="mt-[-24px] mb-6 w-[calc(100%+48%)] bg-transparent text-white rounded-sm p-4">
       <div className="overflow-hidden">
         <Marquee
           direction="right"
           speed={30}
           pauseOnHover={true}
-          
+
         >
           {items.map((img) => (
             <div key={img.id} className="mx-3 flex-shrink-0">
               <img
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 object-contain"
+                className="w-16 h-13 sm:w-20 sm:h-16 md:w-28 md:h-23 lg:w-36 lg:h-29 object-contain"
                 src={img.path}
                 alt={`Partner ${img.id}`}
               />
