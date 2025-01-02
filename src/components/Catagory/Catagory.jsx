@@ -106,9 +106,9 @@ const Category = () => {
       </div>
 
       {/* costume 3D slider */}
-      <div className="">
+      {/* <div className="">
         <Slider3D />
-      </div>
+      </div> */}
     </div>
   );
 };
