@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState , useContext } from "react";
+import WidthContext from "../../WidthContext/WidthContext";
+
 import {
   FaBars,
   FaTachometerAlt,
@@ -12,7 +14,9 @@ import {
 } from "react-icons/fa";
 
 const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  // const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const { isCollapsed , setIsCollapsed } = useContext(WidthContext) ;
 
   // Toggle collapse state
   const toggleSidebar = () => {
