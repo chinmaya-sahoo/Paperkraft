@@ -37,7 +37,7 @@ const Category = () => {
   };
 
   return (
-    <div className="p-6 overflow-x-hidden overflow-y-auto w-full">
+    <div className="p-6 w-full h-screen overflow-x-hidden overflow-y-auto ">
       {/* Header Section */}
       <div className="flex flex-col justify-between items-center mb-4">
         <h1 className="text-3xl mb-6 font-bold">Category</h1>
