@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./CatagoryAnimation.css";
+import "./CategoryAnimation.css";
 import Slider3D from "./Slider3D/Slider3D";
 const Category = () => {
 
@@ -37,10 +37,10 @@ const Category = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-6 overflow-x-hidden overflow-y-auto w-full">
       {/* Header Section */}
       <div className="flex flex-col justify-between items-center mb-4">
-        <h1 className="text-xl mb-4 font-bold">Catagory</h1>
+        <h1 className="text-3xl mb-6 font-bold">Category</h1>
         <select className="border p-2 rounded-md shadow-sm focus:outline-none">
           <option value="option1">Option 1 </option>
           <option value="option2">Option 2 </option>
