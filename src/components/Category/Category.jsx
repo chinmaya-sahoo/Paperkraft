@@ -4,8 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./CategoryAnimation.css";
 import Slider3D from "./Slider3D/Slider3D";
+import { useContext } from "react";
+import WidthContext from "../../WidthContext/WidthContext";
+// import ;
 const Category = () => {
-
+  const {isCollapsed} = useContext(WidthContext);
 
   // Slider settings for the 3D image slider
   const bottomSliderSettings = {
@@ -37,9 +40,9 @@ const Category = () => {
   };
 
   return (
-    <div className="p-6 w-full h-screen overflow-x-hidden overflow-y-auto ">
+    <div className={`p-6 ${isCollapsed ? "w-[calc(100vw-84px)]": "w-[calc(100vw-220px)] md:w-[calc(100vw-190px)] sm:w-[calc(100vw-180px)]" } h-full overflow-x-hidden overflow-y-auto bg-red-500 `} >
       {/* Header Section */}
-      <div className="flex flex-col justify-between items-center mb-4">
+      <div className="flex flex-col  items-center mb-4">
         <h1 className="text-3xl mb-6 font-bold">Category</h1>
         <select className="border p-2 rounded-md shadow-sm focus:outline-none">
           <option value="option1">Option 1 </option>
@@ -49,7 +52,7 @@ const Category = () => {
       </div>
 
       {/* Top Slider */}
-      <div className="mb-6">
+      <div className="mb-6 ">
         <h2 className="text-lg font-semibold mb-2">Random Images</h2>
 
         <div className="flex justify-center gap-10" >

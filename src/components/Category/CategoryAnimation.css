@@ -25,4 +25,14 @@
         opacity: 0;
     }
 }
-
+/* 
+@media (max-width: 1024px) {
+    .responsive{
+        width: calc(100vw-200px) ;
+    }
+}
+@media (max-width: 2000px) {
+    .responsive{
+        width: calc(100vw-220px) ;
+    }
+} */
