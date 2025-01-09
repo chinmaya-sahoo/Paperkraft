@@ -40,7 +40,7 @@ const Category = () => {
   };
 
   return (
-    <div className={`p-6 ${isCollapsed ? "w-[calc(100vw-84px)]": "w-[calc(100vw-220px)] md:w-[calc(100vw-190px)] sm:w-[calc(100vw-180px)]" } h-full overflow-x-hidden overflow-y-auto bg-red-500 `} >
+    <div className={`p-6 w-full ${isCollapsed ? "max-w-[calc(100vw-84px)]": "max-w-[calc(100vw-220px)] " }  min-w-[250px] h-full overflow-x-hidden overflow-y-auto bg-red-500 `} >
       {/* Header Section */}
       <div className="flex flex-col  items-center mb-4">
         <h1 className="text-3xl mb-6 font-bold">Category</h1>
