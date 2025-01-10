@@ -1,83 +1,50 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+// import './Contact.css'; // Ensure you style it accordingly
 
 const Contact = () => {
-  const sliderImages = [
-    "https://via.placeholder.com/300x200?text=Image+1",
-    "https://via.placeholder.com/300x200?text=Image+2",
-    "https://via.placeholder.com/300x200?text=Image+3",
-  ];
-
-  const sliderSettings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    arrows : false,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-  };
-
   return (
-    <div className="flex flex-col items-center bg-gray-100 min-h-screen p-6">
-      <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6">
-        {/* Description Section */}
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-center mb-4">Contact Us</h1>
-          <p className="text-gray-700 text-center">
-            Get in touch with us for any inquiries, support, or feedback.
-          </p>
+    <div className="contact-container">
+      <div className="contact-left">
+        <h2>Contact Us</h2>
+        <h1>Let’s talk about your project</h1>
+        <p>Email: <a href="mailto:info@pixwell.sk">info@pixwell.sk</a></p>
+        <p>Phone: <a href="tel:+421915261658">+421 915 261 658</a></p>
+
+        <div className="social-icons">
+          <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i className="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i className="fab fa-pinterest-p"></i></a>
         </div>
 
-        {/* Icons Section */}
-        <div className="flex justify-center gap-4 mb-6">
-          <a
-            href="#"
-            className="bg-blue-500 text-white p-3 rounded-full shadow-md hover:bg-blue-600 transition"
-            title="Email"
-          >
-            📧
-          </a>
-          <a
-            href="#"
-            className="bg-green-500 text-white p-3 rounded-full shadow-md hover:bg-green-600 transition"
-            title="WhatsApp"
-          >
-            📱
-          </a>
-          <a
-            href="#"
-            className="bg-red-500 text-white p-3 rounded-full shadow-md hover:bg-red-600 transition"
-            title="Instagram"
-          >
-            📷
-          </a>
-          <a
-            href="#"
-            className="bg-gray-800 text-white p-3 rounded-full shadow-md hover:bg-gray-900 transition"
-            title="Facebook"
-          >
-            📘
-          </a>
+        <div className="billing-info">
+          <p><strong>Billing info:</strong></p>
+          <p>Pixwell, s.r.o</p>
+          <p>Hattalova 8, 831 03 Bratislava, Slovakia</p>
+          <p>ID: 50 108 816</p>
+          <p>TAX ID: 2120177829</p>
+          <p>VAT ID: SK2120177829</p>
         </div>
+      </div>
 
-        {/* Image Slider Section */}
-        <div className="mt-6">
-          <Slider {...sliderSettings}>
-            {sliderImages.map((src, index) => (
-              <div key={index} className="flex justify-center">
-                <img
-                  src={src}
-                  alt={`Slide ${index + 1}`}
-                  className="rounded-lg"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
+      <div className="contact-right">
+        <form className="contact-form">
+          <label htmlFor="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+          <label htmlFor="query">How can we help you?</label>
+          <select id="query" name="query">
+            <option value="general">General Inquiry</option>
+            <option value="project">Project Discussion</option>
+            <option value="support">Support</option>
+          </select>
+
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
     </div>
   );
