@@ -7,6 +7,7 @@ import Category from './components/Category/Category';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Search from './components/Search/Search';
+import Item from './components/Item/Item';
 
 function Render() {
   return (
@@ -20,7 +21,8 @@ function Render() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/search" element={<Search />} />
-            <Route path="/infinite-scroll" element={<InfiniteScroll />} />
+            <Route path="/item" element={ <Item/> } />
+            {/* <Route path="/infinite-scroll" element={<InfiniteScroll />} /> */}
           </Routes>
         </div>
       </div>
