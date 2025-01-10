@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-gray-900 text-white py-16 px-8 md:flex md:justify-between">
+    <div className="bg-gray-900 h-screen overflow-x-hidden overflow-y-auto  text-white py-16 px-8 md:flex md:justify-between my-auto">
       {/* Left Section */}
       <div className="md:w-1/2 mb-8 md:mb-0">
         <h2 className="text-lg uppercase tracking-wide text-gray-400">Contact Us</h2>
@@ -28,53 +28,11 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Right Section */}
-      <div className="md:w-1/2 bg-gray-800 p-8 rounded-lg">
-        <form className="space-y-6">
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-400">Your Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your Email"
-              className="mt-2 block w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            />
-          </div>
-
-          <div>
-            <label htmlFor="query" className="block text-sm font-medium text-gray-400">How can we help you?</label>
-            <select
-              id="query"
-              name="query"
-              className="mt-2 block w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="general">General Inquiry</option>
-              <option value="project">Project Discussion</option>
-              <option value="support">Support</option>
-            </select>
-          </div>
-
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-400">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Write your message here..."
-              rows="5"
-              className="mt-2 block w-full bg-gray-700 text-white p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              required
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600 transition"
-          >
-            Send Message
-          </button>
-        </form>
+      {/* Right Section Replaced with Image */}
+      <div 
+        className="md:w-1/2 bg-cover bg-center rounded-lg shadow-lg animate-pulse" 
+        style={{ backgroundImage: "url('/Default_Images/user.png')", height: '400px' }}
+      >
       </div>
     </div>
   );
