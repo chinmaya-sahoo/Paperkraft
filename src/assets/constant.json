@@ -1,0 +1,49 @@
+{
+  "app": {
+    "name": "Sample React App",
+    "version": "1.0.0",
+    "environment": "development"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Chinmaya Sahoo",
+      "email": "chinmaysahoo668@gmail.com",
+      "role": "admin",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Amit Kumar",
+      "email": "amit@example.com",
+      "role": "user",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Priya Sharma",
+      "email": "priya@example.com",
+      "role": "user",
+      "active": false
+    }
+  ],
+  "products": [
+    {
+      "id": "p101",
+      "name": "EV Scooter X",
+      "price": 95000,
+      "inStock": true
+    },
+    {
+      "id": "p102",
+      "name": "EV Bike Pro",
+      "price": 135000,
+      "inStock": false
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "notifications": true,
+    "language": "en-IN"
+  }
+}
