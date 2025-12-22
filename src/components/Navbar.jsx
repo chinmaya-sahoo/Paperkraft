@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-export const Navbar = () => {
+export default function Navbar() {
     const [open, setOpen] = useState(false)
     return (
         <nav className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative transition-all">
@@ -17,7 +17,7 @@ export const Navbar = () => {
             <div className="hidden sm:flex items-center gap-8">
                 <a href="#">Home</a>
                 <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="#">Pricing</a>
 
                 <div className="hidden lg:flex items-center text-sm gap-2 border border-gray-300 px-3 rounded-full">
                     <input className="py-1.5 w-full bg-transparent outline-none placeholder-gray-500" type="text" placeholder="Search products" />
@@ -27,15 +27,8 @@ export const Navbar = () => {
                     </svg>
                 </div>
 
-                <div className="relative cursor-pointer">
-                    <svg width="18" height="18" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0" stroke="#615fff" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <button className="absolute -top-2 -right-3 text-xs text-white bg-indigo-500 w-4.5 h-4.5 rounded-full">3</button>
-                </div>
-
                 <button className="cursor-pointer px-8 py-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full">
-                    Login
+                    Contact
                 </button>
             </div>
 
@@ -52,9 +45,9 @@ export const Navbar = () => {
             <div className={`${open ? 'flex' : 'hidden'} absolute top-15 left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden`}>
                 <a href="#" className="block">Home</a>
                 <a href="#" className="block">About</a>
-                <a href="#" className="block">Contact</a>
+                <a href="#" className="block">Pricing</a>
                 <button className="cursor-pointer px-6 py-2 mt-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full text-sm">
-                    Login
+                    Contact
                 </button>
             </div>
 
