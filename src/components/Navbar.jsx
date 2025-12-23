@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const links = [
   { name: "Home", href: "/" },
@@ -15,17 +16,17 @@ const Navbar = () => {
     <nav className="relative mx-4 mt-4 flex items-center justify-between rounded-full border border-slate-300 bg-white px-6 py-3 text-sm text-slate-800 shadow-sm">
       
       {/* Logo */}
-      <a href="/" className="flex items-center gap-2 font-semibold">
+      <Link to="/" className="flex items-center gap-2 font-semibold">
         <span className="text-indigo-600 text-lg">🎭</span>
         FancyDress
-      </a>
+      </Link>
 
       {/* Desktop Menu */}
       <div className="hidden md:flex items-center gap-6">
         {links.map((item) => (
-          <a
+          <Link
             key={item.name}
-            href={item.href}
+            to={item.href}
             className="relative group overflow-hidden h-6"
           >
             <span className="block transition-transform duration-300 group-hover:-translate-y-full">
@@ -34,7 +35,7 @@ const Navbar = () => {
             <span className="absolute left-0 top-full block transition-transform duration-300 group-hover:-translate-y-full">
               {item.name}
             </span>
-          </a>
+          </Link>
         ))}
       </div>
 
@@ -43,6 +44,7 @@ const Navbar = () => {
         <a
           href="https://wa.me/917735584055?text=Hi,%20I%20want%20Fancy%20Dress%20Costume"
           className="rounded-full border border-slate-300 px-4 py-1.5 hover:bg-slate-100 transition"
+          target="_blank"
         >
           WhatsApp
         </a>
@@ -68,14 +70,14 @@ const Navbar = () => {
         <div className="absolute left-0 top-16 z-20 w-full rounded-xl border bg-white py-4 shadow-md md:hidden">
           <div className="flex flex-col items-center gap-4">
             {links.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 onClick={() => setOpen(false)}
                 className="hover:text-indigo-600"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <a
               href="https://wa.me/917735584055"
