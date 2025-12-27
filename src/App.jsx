@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Loader from "./components/Loader";
 import Products from "./pages/Products";
 import Category from "./pages/Category";
+import Contact from "./pages/Contact";
 import ProductDetails from "./pages/ProductDetails";
 import { useEffect, useState } from "react";
 
@@ -28,7 +28,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/products" element={<Products />} />
             <Route path="/category/:slug" element={<Category />} />
             <Route path="/product/:id" element={<ProductDetails />} />
