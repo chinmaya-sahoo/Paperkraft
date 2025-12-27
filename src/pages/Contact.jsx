@@ -31,7 +31,7 @@ const Contact = () => {
           {/* Profile Image */}
           <div className="flex justify-center">
             <img
-              src="/my_image.png"
+              src="/images/my_image.png"
               alt="Profile"
               className="w-56 h-56 rounded-2xl object-cover shadow-md"
             />
