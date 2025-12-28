@@ -42,7 +42,7 @@ const Navbar = () => {
       {/* Desktop CTA */}
       <div className="hidden md:flex">
         <a
-          href="https://wa.me/917735584055?text=Hi,%20I%20want%20Fancy%20Dress%20Costume"
+          href="https://wa.me/917735584055?text=Hi,%20I'm%20Interested%20in%20Your%20Products"
           className="rounded-full border border-slate-300 px-4 py-1.5 hover:bg-slate-100 transition"
           target="_blank"
         >
