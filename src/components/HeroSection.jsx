@@ -4,10 +4,10 @@ export const HeroSection = () => {
   const categories = [
     "Krishna Dress",
     "Sanju Costume",
-    "Fancy Mukut",
+    "Raj Mukut",
     "Belts & Accessories",
-    "Kids Fancy Dress",
-    "Adult Fancy Dress",
+    "Kids Costume Sets",
+    "Adult Costume Sets",
   ];
 
   return (
@@ -56,7 +56,7 @@ export const HeroSection = () => {
             wrap-break-word leading-tight
           "
         >
-          Fancy Dress Costume Accessories for{" "}
+          Mahabali Costume Accessories for{" "}
           <span className="bg-linear-to-r from-indigo-700 to-indigo-500 bg-clip-text text-transparent">
             Kids & Adults
           </span>
