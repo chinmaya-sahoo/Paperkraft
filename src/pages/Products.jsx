@@ -59,7 +59,7 @@ const Products = () => {
           >
             <option value="all">All Age Groups</option>
             <option value="kids">Kids</option>
-            <option value="adult">Adult</option>
+            <option value="adults">Adult</option>
           </select>
         </div>
       </div>
