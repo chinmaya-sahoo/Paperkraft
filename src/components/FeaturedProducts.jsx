@@ -52,7 +52,7 @@ const FeaturedProducts = () => {
     )}`;
 
   return (
-    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-20 bg-slate-50">
+    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-20 bg-gray-50">
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold">

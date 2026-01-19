@@ -11,12 +11,12 @@ export const HeroSection = () => {
   ];
 
   return (
-    <div className="min-h-screen pb-16 font-[Poppins] overflow-x-hidden">
+    <div className="pb-6 font-[Poppins] overflow-x-hidden">
       <div className="relative flex flex-col items-center text-center px-3 sm:px-6 md:px-16 lg:px-24 xl:px-40">
 
         {/* Glow */}
         <div className="absolute top-24 left-1/2 -translate-x-1/2 -z-10 
-                        size-56 sm:size-80 bg-indigo-300 blur-[90px] opacity-30" />
+                        size-56 sm:size-80 bg-indigo-300 blur-[90px] opacity-30"></div>
 
         {/* Social Proof */}
         <div className="flex items-center gap-2 mt-20 sm:mt-24">

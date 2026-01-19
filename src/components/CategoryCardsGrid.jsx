@@ -40,7 +40,7 @@ const categories = [
 
 const CategoryCardsGrid = () => {
   return (
-    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-20">
+    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-10 bg-gray-100 rounded-2xl">
       {/* Section Header */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold">
