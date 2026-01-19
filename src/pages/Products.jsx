@@ -45,8 +45,8 @@ const Products = () => {
             className="rounded-md border px-2 py-1 text-xs sm:px-3 sm:py-1.5 sm:text-sm focus:ring-2 focus:ring-indigo-500 outline-none"
           >
             <option value="all">All Age Groups</option>
-            <option value="kids">Kids</option>
-            <option value="adults">Adult</option>
+            <option value="kids">Kids only</option>
+            <option value="adults">Adult only</option>
           </select>
         </div>
       </div>
@@ -59,7 +59,7 @@ const Products = () => {
           ))}
         </div>
       ) : (
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center h-[40vh] ">
           <div className="mt-16 rounded-2xl border bg-white p-10 text-center shadow-sm">
             <h3 className="text-lg font-semibold">No products found</h3>
             <p className="mt-2 text-sm text-gray-500">
