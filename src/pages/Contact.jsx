@@ -13,7 +13,6 @@ import {
 const Contact = () => {
   return (
     <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-20 bg-linear-to-b from-indigo-50 via-white to-white">
-      
       {/* Heading */}
       <div className="text-center max-w-2xl mx-auto mb-16">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
@@ -25,9 +24,8 @@ const Contact = () => {
       </div>
 
       {/* Main Contact Card */}
-      <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-lg p-8 md:p-12">
+      <div className="mx-auto bg-white rounded-3xl shadow-lg p-8 md:p-12">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          
           {/* Profile Image */}
           <div className="flex justify-center">
             <img
@@ -39,9 +37,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div>
-            <h2 className="text-2xl font-semibold mb-6">
-              Let’s Connect
-            </h2>
+            <h2 className="text-2xl font-semibold mb-6">Let’s Connect</h2>
 
             <div className="space-y-4 text-sm">
               <a
@@ -59,7 +55,8 @@ const Contact = () => {
               </a>
 
               <div className="flex items-center gap-3 text-gray-700">
-                <MapPin size={18} /> Near Coordinate: {`20.8009, 86.2365`}
+                <MapPin size={18} /> Near Gopinath Temple, Narasinghpur, Jajpur,
+                Odisha
               </div>
 
               <a
@@ -74,39 +71,54 @@ const Contact = () => {
 
             {/* Social Icons */}
             <div className="mt-8">
-              <p className="text-sm font-medium mb-4">
-                Follow me on
-              </p>
+              <p className="text-sm font-medium mb-4">Follow me on 👇</p>
               <div className="flex gap-4">
                 <a
                   href="https://instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full border hover:bg-indigo-50 transition"
+                  className="p-3 rounded-full border
+                            transition-all duration-300
+                            hover:scale-110
+                            hover:shadow-lg
+                            hover:bg-linear-to-tr 
+                            hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCAF45]"
                 >
                   <Instagram />
                 </a>
+
                 <a
                   href="https://facebook.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full border hover:bg-indigo-50 transition"
+                  className="p-3 rounded-full border
+             transition-all duration-300
+             hover:bg-[#1877F2] hover:text-white
+             hover:scale-110 hover:shadow-lg"
                 >
                   <Facebook />
                 </a>
+
                 <a
                   href="https://linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full border hover:bg-indigo-50 transition"
+                  className="p-3 rounded-full border
+             transition-all duration-300
+             hover:bg-[#0A66C2] hover:text-white
+             hover:scale-110 hover:shadow-lg"
                 >
                   <Linkedin />
                 </a>
+
                 <a
                   href="https://github.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full border hover:bg-indigo-50 transition"
+                  className="p-3 rounded-full border
+             transition-all duration-300
+             hover:bg-[#24292F] hover:text-white
+             hover:scale-110 hover:shadow-lg"
                 >
                   <Github />
                 </a>

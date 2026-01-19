@@ -47,9 +47,11 @@ const Products = () => {
           >
             <option value="all">All Categories</option>
             <option value="krishna">Krishna Dress</option>
+            <option value="mukut">Mukut</option>
+            <option value="baju">Bajubandh</option>
             <option value="sanju">Sanju Costume</option>
-            <option value="mahabali">Mahabali Costume</option>
-            <option value="accessories">Accessories</option>
+            <option value="mahabaliset">Mahabali Set</option>
+            <option value="kamarbandh">Kamarbandh</option>
           </select>
 
           <select
