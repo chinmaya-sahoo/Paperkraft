@@ -10,7 +10,7 @@ const Home = () => {
       <HeroSection />
       <CategoryCardsGrid />
       <FeaturedProducts />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

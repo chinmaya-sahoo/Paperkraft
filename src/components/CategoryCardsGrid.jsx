@@ -26,7 +26,7 @@ const categories = [
     title: "Sanju Costume",
     desc: "Sanju fancy dress outfits for kids & adults",
     image:
-      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=800",
+      "/images/MahabaliChest/mahabalichest4.jpg",
     link: "/products",
   },
   {

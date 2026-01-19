@@ -8,6 +8,7 @@ import Category from "./pages/Category";
 import Contact from "./pages/Contact";
 import ProductDetails from "./pages/ProductDetails";
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
             <Route path="/product/:id" element={<ProductDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Footer />
         </div>
       )}
     </div>

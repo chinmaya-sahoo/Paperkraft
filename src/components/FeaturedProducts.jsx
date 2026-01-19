@@ -9,38 +9,38 @@ const products = [
     category: "Krishna",
   },
   {
-    name: "Krishna Mukut Crown",
+    name: "Raj Mukut",
     price: "₹199",
     image:
-      "https://images.unsplash.com/photo-1615485737457-f07082c7d73d?q=80&w=800",
-    category: "Accessories",
+      "/images/RajMukut/mukut4.jpeg",
+    category: "Mukut",
   },
   {
     name: "Sanju Fancy Dress Costume",
     price: "₹1,099",
     image:
-      "https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=800",
+      "/images/MahabaliChest/mahabalichest4.jpg",
     category: "Sanju",
   },
   {
     name: "Fancy Dress Belt Set",
     price: "₹149",
     image:
-      "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=800",
+      "/images/Kamarbandh/kamarbandh1.webp",
     category: "Accessories",
   },
   {
     name: "Adult Fancy Dress Costume",
     price: "₹1,299",
     image:
-      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=800",
+      "/images/MahabaliChest/mahabalichest9.webp",
     category: "Adult",
   },
   {
     name: "Kids Fancy Dress Combo Set",
     price: "₹999",
     image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800",
+      "/images/MahabaliSet/set1.webp",
     category: "Kids",
   },
 ];
