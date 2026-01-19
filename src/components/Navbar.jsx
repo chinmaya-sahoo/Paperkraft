@@ -13,7 +13,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-[80%] relative mx-4 mt-4 flex items-center justify-between rounded-full border border-slate-300 bg-white px-6 py-3 text-sm text-slate-800 shadow-sm left-1/2 -translate-x-[50%]">
+    <nav className="lg:w-[80%] relative mx-4 mt-4 flex items-center justify-between rounded-full border border-slate-300 bg-white px-6 py-3 text-sm text-slate-800 shadow-sm left-1/2 -translate-x-[50%]">
       
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2 font-semibold">
