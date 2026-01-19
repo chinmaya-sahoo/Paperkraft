@@ -12,15 +12,12 @@ import {
 
 const Contact = () => {
   return (
-    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-20 bg-linear-to-b from-indigo-50 via-white to-white">
+    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-5 md:py-10 bg-linear-to-b from-indigo-50 via-white to-white">
       {/* Heading */}
-      <div className="text-center max-w-2xl mx-auto mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+      <div className="text-center max-w-2xl mx-auto mb-5 md:mb-10">
+        <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold tracking-tight">
           Contact Me
         </h1>
-        <p className="mt-4 text-gray-600">
-          Reach out for orders, enquiries, or collaborations
-        </p>
       </div>
 
       {/* Main Contact Card */}
@@ -31,7 +28,7 @@ const Contact = () => {
             <img
               src="/images/my_image.jpg"
               alt="Profile"
-              className="w-56 h-56 rounded-2xl object-cover shadow-md"
+              className="lg:w-lg lg:h-128 w-56 h-56 rounded-2xl object-cover shadow-md"
             />
           </div>
 
@@ -74,7 +71,7 @@ const Contact = () => {
               <p className="text-sm font-medium mb-4">Follow me on 👇</p>
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/chinmaya_prog/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full border
@@ -88,7 +85,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://facebook.com/"
+                  href="https://www.facebook.com/chinmay.sahoo.353250/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full border
@@ -100,7 +97,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/"
+                  href="http://www.linkedin.com/in/chinmaya-sahoo-07e/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full border
@@ -112,7 +109,7 @@ const Contact = () => {
                 </a>
 
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/chinmaya-sahoo/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-full border

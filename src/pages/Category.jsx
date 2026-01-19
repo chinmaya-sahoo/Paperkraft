@@ -11,9 +11,9 @@ const Category = () => {
   );
 
   return (
-    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-20">
-      <h1 className="text-4xl font-semibold capitalize text-center mb-10">
-        {slug} Fancy Dress
+    <section className="px-4 md:px-16 lg:px-24 xl:px-40 py-5 md:py-10">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold capitalize text-center mb-10">
+        {slug} Mahabali Costume
       </h1>
 
       {filteredProducts.length === 0 ? (
