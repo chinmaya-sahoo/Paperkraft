@@ -5,7 +5,7 @@ const products = [
     name: "Krishna Fancy Dress (Kids)",
     price: "₹899",
     image:
-      "https://images.unsplash.com/photo-1600508774634-4c4b2b8c1c4d?q=80&w=800",
+      "/images/KrishnaCostume/krishnacosume1.webp",
     category: "Krishna",
   },
   {

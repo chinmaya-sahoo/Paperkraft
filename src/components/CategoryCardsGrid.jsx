@@ -5,36 +5,36 @@ const categories = [
     title: "Kids Fancy Dress",
     desc: "Cute & colorful costumes for school functions",
     image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800",
+      "/images/KrishnaCostume/krishnacosume1.webp",
     link: "/category/kids",
   },
   {
     title: "Adult Fancy Dress",
     desc: "Traditional & event-ready fancy dress for adults",
     image:
-      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=800",
+      "/images/MahabaliChest/mahabalichest7.jpg",
     link: "/category/adults",
   },
   {
     title: "Krishna Dress & Mukut",
     desc: "Complete Krishna costume sets & crowns",
     image:
-      "https://images.unsplash.com/photo-1600508774634-4c4b2b8c1c4d?q=80&w=800",
-    link: "/category/krishna",
+      "/images/RajMukut/mukut2.jpg",
+    link: "/products",
   },
   {
     title: "Sanju Costume",
     desc: "Sanju fancy dress outfits for kids & adults",
     image:
       "https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=800",
-    link: "/category/sanju",
+    link: "/products",
   },
   {
     title: "Accessories",
     desc: "Belts, Mukut, Jewellery & more",
     image:
-      "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=800",
-    link: "/category/accessories",
+      "/images/Kamarbandh/kamarbandh4.jpg",
+    link: "/products",
   },
 ];
 
